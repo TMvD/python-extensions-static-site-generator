@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "static site generator extensions"
+version = "0.1.0"
+description = "Add Extensions to a Static Site Generator with Python"
+authors = ["Thomas van Dam <thomasvandam@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+docutils = "^0.19"
+Markdown = "^3.4.1"
+mongoquery = "^1.4.2"
+objectpath = "^0.6.1"
+parso = "^0.8.3"
+PyYAML = "^6.0"
+typer = "^0.6.1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1.3"
+pytest-json-report = "^1.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
